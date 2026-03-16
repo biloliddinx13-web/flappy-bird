@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 100%;
+    --primary: 48 96% 53%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 142 71% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 187 47% 63%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 100%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 48 96% 53%;
+    --radius: 0.25rem;
+
+    --sky: 187 47% 63%;
+    --ground: 50 47% 72%;
+    --grass: 142 58% 58%;
+    --pipe: 142 71% 45%;
+    --bird: 48 96% 53%;
+    --bird-accent: 0 84% 60%;
+
+    --font-display: 'Press Start 2P', monospace;
+    --font-body: 'VT323', monospace;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+}
